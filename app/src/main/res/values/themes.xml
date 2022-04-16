@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.Miwok" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#4A312A</item>
+        <item name="colorPrimaryDark">#2F1D1A</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="actionBarStyle">@style/MiwokAppBarStyle</item>
+    </style>
+
+    <style parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse" name="MiwokAppBarStyle">
+    <item name="elevation">0dp</item>
+    </style>
+
+    <style parent="Widget.Design.TabLayout" name="CategoryTab">
+    <item name="tabIndicatorColor">@android:color/white</item>
+    <item name="tabSelectedTextColor">@android:color/white</item>
+    <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+    </style>
+
+    <style parent="TextAppearance.Design.Tab" name="CategoryTabTextAppearance">
+    <item name="android:textColor">#A8A19E</item>
+    </style>
+</resources>

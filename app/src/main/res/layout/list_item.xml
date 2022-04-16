@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:minHeight="88dp"
+    android:background="#FFF7DA"
+    android:layout_width="match_parent"
+    android:layout_height="88dp" >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="88dp"
+        android:layout_height="88dp"/>
+
+        <RelativeLayout
+            android:id="@+id/text_container"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_toEndOf="@id/image"
+            android:paddingStart="16dp"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" >
+
+            <TextView
+                android:id="@+id/miwok_textView"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="bottom"
+                tools:text="lutti"/>
+
+            <TextView
+                android:id="@+id/english_textView"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:gravity="top"
+                tools:text="one"
+                android:layout_below="@id/miwok_textView" />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_play_arrow" />
+
+        </RelativeLayout>
+</RelativeLayout>
